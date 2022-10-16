@@ -6,7 +6,7 @@ const container = document.querySelector('#container');
 addButton.onclick = function() {
 
     if (taskName.value.trim().length < 1) {
-        alert('Give your task some name')
+        alert('Give your task some name');
     }
     else {
 
@@ -27,7 +27,7 @@ addButton.onclick = function() {
     const checkBox = document.createElement('input');
     checkBox.type = 'checkbox';
     checkBox.classList.add('checkBox');
-    box.appendChild(checkBox);
+    box.append(checkBox);
 
     const currentCheck = document.querySelectorAll('.checkBox');
 
@@ -83,6 +83,9 @@ addButton.onclick = function() {
             this.parentElement.remove();
         }
     };
+
+    //reset "taskName" value
+    taskName.value = '';
 }
     
 };
