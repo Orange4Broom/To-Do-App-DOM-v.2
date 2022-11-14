@@ -1,213 +1,177 @@
 :root {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: #24B670;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #24B670;
 }
 
-/*-----------------------Create task div-----------------------*/
-
 #main {
-    width: 600px;
-    border-radius: 10px;
-    margin-top: 12%;
-    background-color: #FFFFFF;
+  width: 600px;
+  border-radius: 10px;
+  margin-top: 12%;
+  background-color: #FFFFFF;
 }
 
 #divHeader {
-    font-size: 24px;
-    font-weight: 400;
-
-    margin-left: 40px;
-    margin-top: 15px;
-
-    color: #2B2E47;
-    cursor: default;
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-top: 15px;
+  color: #2B2E47;
+  cursor: default;
 }
 
 #divBody {
-    display: flex;
-    justify-content: center;
-    gap: 56px;
-    margin-top: 11px;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  margin-top: 11px;
 }
 
-/*---------Task name input---------*/
-
 #taskName {
-    height: 50px;
-    width: 320px;
-    border: 2px solid #24B670;
-    border-radius: 10px;
-    outline: none;
-
-    font-size: 20px;
-    padding-left: 8px;
-
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  width: 320px;
+  border: 2px solid #24B670;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #taskName:hover {
-    border-color: #23ab69;
+  border-color: #23ab69;
 }
 
 #taskName:active {
-    scale: 99%;
+  scale: 99%;
 }
 
-/*---------Task add button---------*/
-
 #addTask {
-    height: 56px;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-
-    font-size: 24px;
-
-    color: #FFFFFF;
-    background-color: #24B670;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  height: 56px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #FFFFFF;
+  background-color: #24B670;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 #addTask:hover {
-    cursor: pointer;
-    background-color: #23ab69;
+  cursor: pointer;
+  background-color: #23ab69;
 }
 
 #addTask:active {
-    scale: 97%;
-    background-color: #1b9258;
+  scale: 97%;
+  background-color: #1b9258;
 }
 
-/*-----------------------Task div-----------------------*/
-
 #container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-
-    width: 600px;
-
-    margin-top: 35px;
-    padding-bottom: 25px;
-    border-radius: 10px;
-    
-    background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 600px;
+  margin-top: 35px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: row;
-    
-
-    height: 50px;
-    width: 528px;
-
-    border: 2px solid #24B670;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  height: 50px;
+  width: 528px;
+  border: 2px solid #24B670;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/*-----------------------Task header-----------------------*/
 
 #header {
-    color: #2B2E47;
-    font-size: 22px;
-    font-weight: 400;
-    margin-left: 2%;
+  color: #2B2E47;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 2%;
 }
 
-/*-----------------------Task check button-----------------------*/
 .checkBox {
-    appearance: none;
-    -webkit-appearance: none;
-
-    position: absolute;
-    margin-left: 420px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 32px;
-    width: 32px;
-    
-    border: none;
-    border-radius: 10px;
-
-    background-color: #24B670; 
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  margin-left: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: #24B670;
 }
 
 .checkBox:hover {
-    cursor: pointer;
-    background-color: #23ab69;
+  cursor: pointer;
+  background-color: #23ab69;
 }
 
 .checkBox:active {
-    scale: 97%;
-    background-color: #1b9258;
+  scale: 97%;
+  background-color: #1b9258;
 }
 
-.checkBox:checked{
-    background-color: whitesmoke;
+.checkBox:checked {
+  background-color: whitesmoke;
 }
 
 .checkBox::after {
-    content: "\f00c";
-    cursor: pointer;
-
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 24px;
-
-    color: whitesmoke;
-    
+  content: "\f00c";
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  color: whitesmoke;
 }
 
 .checkBox:checked::after {
-    color: #24B670;
-    display: block;
+  color: #24B670;
+  display: block;
 }
 
-/*-----------------------Task delete button-----------------------*/
 .delete {
-    position: absolute;
-    margin-left: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 32px;
-    width: 32px;
-
-    border: none;
-    border-radius: 10px;
-
-    font-size: 20px;
-    font-weight: 900;
-    color: #FFFFFF;
-    background-color: #24B670;
+  position: absolute;
+  margin-left: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #FFFFFF;
+  background-color: #24B670;
 }
 
 .delete:hover {
-    cursor: pointer;
-    background-color: #23ab69;
+  cursor: pointer;
+  background-color: #23ab69;
 }
 
 .delete:active {
-    scale: 97%;
-    background-color: #1b9258;
-}
-
+  scale: 97%;
+  background-color: #1b9258;
+}/*# sourceMappingURL=style.css.map */
